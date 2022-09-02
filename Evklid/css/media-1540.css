@@ -1,0 +1,42 @@
+@media(max-width: 1540px) {
+  .header__logo-link {
+    margin-right: 0;
+  }
+
+  .nav {
+    margin-right: 30px;
+  }
+
+  .header {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .header__logo-link {
+    height: 60px;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 45px;
+  }
+
+  .hero__title, .hero__descr {
+    max-width: 85%;
+  }
+
+  .footer__nav {
+    width: calc(100% / 3 - 15%);
+  }
+  
+  .footer__text {
+    width: calc(100% / 3 - 10%);
+  }
+
+  .footer__list {
+    margin-bottom: 55px;
+  }
+
+  .footer {
+    padding-top: 50px;
+  }
+}

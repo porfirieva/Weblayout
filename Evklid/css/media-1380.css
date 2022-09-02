@@ -1,0 +1,23 @@
+@media(max-width: 1380px) {
+
+  .footer__text {
+    display: none;
+  }
+
+  .img-block-about {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: var(--gap);
+  } 
+  .about__text-block {
+    width: 100%;
+  }
+
+  .form {
+    width: calc(100% / 2 + 20%);
+  }
+
+  .about__column {
+    flex-wrap: wrap;
+  } 
+}

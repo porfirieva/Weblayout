@@ -1,0 +1,152 @@
+@media(max-width: 1025px) {
+  .container {
+    padding: 0 50px;
+  }
+
+  .header {
+    padding-top: 24px;
+    padding-left: 47px;
+
+    padding-bottom: 25px;
+    margin-bottom: 40px;
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 420px;
+    padding-top: 169px;
+    padding-left: 50px;
+    overflow-y: auto;
+    background-color: white;
+    z-index: 100;
+    border-radius: 0 32px 32px 0;
+    align-items: unset;
+    visibility: hidden;
+    transform: translateX(-120%);
+    transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  nav.active {
+    visibility: visible;
+    transform: none;
+  }
+
+  .nav__list {
+    flex-direction: column;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 57px;
+  }
+
+  .nav__item {
+    font-size: 1.5rem;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .header__logo-link {
+    height: 50px;
+  }
+
+  .img-block-about__descr {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+
+  .hero {
+    margin-bottom: 10px;
+  }
+
+  .hero__title, .hero__descr {
+    max-width: 95%;
+  }
+
+  .hero__content {
+    min-height: 670px;
+    padding-top: 162px;
+  }
+
+  .hero__container {
+    padding-top: 160px;
+  }
+
+  .hero__title {
+    font-size: 60px;
+    line-height: 73px;
+    margin-bottom: 10px;
+  }
+
+  .hero__descr {
+    font-size: 1.25rem;
+    line-height: 24px;
+    margin-bottom: 63px;
+  }
+
+  .about__descr {
+    margin-bottom: 60px;
+  }
+
+  .about__top, .about__bottom {
+    background-position: left 10% center;
+}
+
+  .img-block-about {
+    min-height: 638px;
+  }
+
+  .about {
+    padding-bottom: 30px;
+  }
+
+  .steps-content__list {
+    margin-bottom: 52px;
+  }
+
+  .steps {
+    padding-bottom: 20px;
+  }
+
+  .steps-descr__text {
+    max-width: 435px;
+    margin-bottom: 25px;
+  }
+
+  .question {
+    padding-bottom: 80px;
+  }
+
+  .question__item {
+    font-size: 1.25rem;
+    line-height: 32px;
+  }
+
+  .item-question__text {
+    max-width: 760px;
+  }
+
+  .form {
+    width: calc(100% / 2 + 18%);
+  }
+
+  .form__btn {
+    padding: 19px 37px;
+    margin-right: 18px;
+  }
+
+  .footer__nav {
+    min-height: 500px;
+    width: calc(((100% - (var(--gap))) / 2));
+  }
+
+  .footer__list {
+    margin-bottom: 90px;
+  }
+}

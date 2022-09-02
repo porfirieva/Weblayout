@@ -1,0 +1,123 @@
+@media(max-width: 911px) {
+  .header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .hero__content {
+    min-height: 662px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .hero__title, .hero__descr {
+    max-width: unset;
+  }
+
+  .hero__title {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .hero__descr {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 80px;
+  }
+
+  .nav {
+    padding-top: 151px;
+  }
+
+  .about__descr {
+    margin-bottom: 55px;
+  }
+
+  .about__bottom, .about__top {
+    background-position: left 7% center;
+    background-size: 17%;
+  }
+  
+  .img-block-about__descr {
+    padding-bottom: 34px;
+    padding-top: 37px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .img-block-about {
+    min-height: 650px;
+  }
+
+  .img-block-about__text {
+    max-width: 65%;
+  }
+
+  .text-block-about__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .text-block-about__descr {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .text-block-about {
+    padding: 5% 3% 5% 25%;
+    min-height: unset;
+  }
+
+  .steps-descr {
+    flex-direction: column-reverse;
+  }
+
+  .steps-content__list {
+    justify-content: space-between;
+  }
+
+  .steps-descr__content, .steps-descr__img {
+    max-width: 100%;
+  }
+
+  .steps-descr__img {
+    margin-bottom: 36px;
+    position: relative;
+    height: 287px;
+    width: 100%;
+  }
+
+  .steps-descr__img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .steps-descr__text {
+    max-width: 100%;
+  }
+
+  .question {
+    padding-top: 25px;
+    padding-bottom: 114px;
+  }
+
+  .footer__container {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .footer__list {
+    display: none;
+  }
+
+  .form {
+    width: 81%;
+    margin-bottom: 53px;
+  }
+
+
+.footer__nav {
+  min-height: unset;
+}
+}
