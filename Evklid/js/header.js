@@ -6,12 +6,14 @@ const menuLinks = document.querySelectorAll(".nav__link");
 burger.addEventListener("click", function () {
   burger.classList.toggle("active");
   menu.classList.toggle("active");
+  document.body.classList.toggle("stop-scroll")
 });
 
 menuLinks.forEach(function (el) {
   el.addEventListener("click", function () {
     burger.classList.remove("active");
     menu.classList.remove("active");
+  document.body.classList.remove("stop-scroll")
   });
 });
 
