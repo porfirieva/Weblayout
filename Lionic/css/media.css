@@ -110,7 +110,7 @@
     flex-wrap: wrap;
   }
 
-  .services__item {
+  /* .services__item {
     margin-bottom: var(--gap);
     width: calc((100% - var(--gap)) / 2);
   }
@@ -121,7 +121,7 @@
 
   .services__item:not(:nth-child(2n)) {
     margin-right: var(--gap);
-  }
+  } */
 
   .articles__preview {
     height: 194px;

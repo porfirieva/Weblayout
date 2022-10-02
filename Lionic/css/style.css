@@ -81,8 +81,6 @@ body {
 
 .container {
   max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
 }
 
 .section-title {
@@ -217,12 +215,6 @@ body {
   background-position: center;
 }
 
-.hero__content {
-  max-width: 50%;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .hero__title {
   margin: 0;
   margin-bottom: 25px;
@@ -272,15 +264,11 @@ body {
   text-align: center;
 }
 
-.services__list {
-  margin-bottom: 30px;
-}
-
 .services__item {
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 60px 30px;
-  width: calc((100% - (var(--gap) * 3)) / 4);
   border: 1px solid #E4E4E4;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
@@ -298,10 +286,6 @@ body {
 .services__item:hover {
   background-color: #3172B9;
   border-color: #3172B9;
-}
-
-.services__item:not(:nth-child(4n)) {
-  margin-right: 30px;
 }
 
 .services__item__icon {
@@ -456,15 +440,14 @@ body {
 
 .clients__item {
   flex-direction: column;
-  width: calc((100% - (var(--gap) * 2)) / 3);
   padding: 50px 36px;
   padding-bottom: 30px;
   border: 1px solid #e4e4e4;
   border-radius: 5px;
 }
 
-.clients__item:not(:nth-child(3n)) {
-  margin-right: var(--gap);
+.clients__item-col {
+  display: flex;
 }
 
 .clients__descr {
@@ -524,11 +507,15 @@ body {
 
 .contacts__item {
   flex-direction: column;
-  width: calc((100% - (var(--gap) * 2)) / 3);
   background-position: left top;
-  background-repeat: no-repeat;
   background-size: 29px 29px;
   padding-top: 48px;
+}
+
+.contacts__item-col {
+  background-repeat: no-repeat;
+  padding-left: 0;
+  padding-right: 30px;
 }
 
 .contacts__item__address {
@@ -543,11 +530,8 @@ body {
   background-image: url(../img/email.svg);
 }
 
-.contacts__item:not(:last-child(3n)) {
-  margin-right: var(--gap);
-}
-
 .contacts__item__caption {
+  display: block;
   margin-bottom: 30px;
   font-size: 17px;
   line-height: 180%;
