@@ -31,23 +31,18 @@ btnMore.addEventListener("click", () => {
 
 // таб по ховеру на карточки services
 let tabServices = document.querySelectorAll(".services__item");
-let tabText = document.querySelectorAll(".services__hide-block");
 
 tabServices.forEach((el) => {
   el.addEventListener("mouseover", function (e) {
     const path = e.currentTarget.dataset.path;
-
-    tabServices.forEach(function (item) {
-      item.classList.remove("services__item-active");
-    });
-    e.currentTarget.classList.add("services__item-active");
-
-    tabText.forEach(function (element) {
-      element.classList.remove("services__hide-block-active");
-    });
-
+    e.currentTarget.classList.add("active");
+    document.querySelector(`[data-target="${path}"]`).classList.add("active");
+  });
+  el.addEventListener("mouseout", function (e) {
+    const path = e.currentTarget.dataset.path;
+    e.currentTarget.classList.remove("active");
     document
       .querySelector(`[data-target="${path}"]`)
-      .classList.add("services__hide-block-active");
+      .classList.remove("active");
   });
 });

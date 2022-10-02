@@ -174,7 +174,7 @@ body {
   background-color: #3172b9;
   color: white;
   border-radius: 3px;
-  transition: backgrounf-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .btn::after {
@@ -846,6 +846,6 @@ body {
   max-width: 70%;
 }
 
-.services__hide-block-active {
+.services__hide-block.active {
   display: block;
 }
