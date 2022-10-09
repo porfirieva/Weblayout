@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knowledge base</title>
+    <!-- scrollbar -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <!-- maps -->
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script src="script-map.js"></script>
+    <!-- multi select -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"
+    ></script>
+    <script defer src="script-choice.js"></script>
+    <!-- validation -->
+    <!-- <script
+      defer
+      src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"
+    ></script> -->
+    <script
+      defer
+      src="https://rawcdn.githack.com/horprogs/Just-validate/7661936417e8aaad0e059291890c68a6bf473f6b/dist/js/just-validate.min.js"
+    ></script>
+    <script
+      defer
+      src="https://rawcdn.githack.com/RobinHerbots/Inputmask/a95afe64e7467eb14eb8aa8ccbfb6340a46fb8e3/dist/inputmask.min.js"
+    ></script>
+    <script defer src="script-validation.js"></script>
+
+    <!-- common styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="checkbox flex">
+      <h2>Категории:</h2>
+      <label>
+        <input class="checkbox__inp" type="checkbox" />
+        <span class="checkbox__text">Динозавры</span>
+      </label>
+      <label>
+        <input class="checkbox__inp" type="checkbox" />
+        <span class="checkbox__text">Медведи</span>
+      </label>
+      <label>
+        <input class="checkbox__inp" type="checkbox" />
+        <span class="checkbox__text">Косули</span>
+      </label>
+      <label>
+        <input class="checkbox__inp" type="checkbox" />
+        <span class="checkbox__text">Лисы</span>
+      </label>
+      <label>
+        <input class="checkbox__inp" type="checkbox" />
+        <span class="checkbox__text">Волки</span>
+      </label>
+      <label>
+        <input class="checkbox__inp" type="checkbox" />
+        <span class="checkbox__text">Олени и лоси</span>
+      </label>
+    </div>
+
+    <div class="select">
+      <select id="select">
+        <option value="">Материал</option>
+        <option value="">Древесина</option>
+        <option value="">Металл</option>
+        <option value="">Камень</option>
+        <option value="">Пластик</option>
+        <option value="">Композитный</option>
+        <option value="">Гипс</option>
+      </select>
+    </div>
+
+    <div class="cart" id="firstMap"></div>
+
+    <div class="scroll" data-simplebar>
+      Сложно сказать, почему многие известные личности представлены в
+      исключительно положительном свете. Лишь активно развивающиеся страны
+      третьего мира будут объективно рассмотрены соответствующими инстанциями.
+      Мы вынуждены отталкиваться от того, что высокотехнологичная концепция
+      общественного уклада представляет собой интересный эксперимент проверки
+      глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая
+      примерно следующее: непосредственные участники технического прогресса
+      освещают чрезвычайно интересные особенности картины в целом, однако
+      конкретные выводы, разумеется, обнародованы. Значимость этих проблем
+      настолько очевидна, что социально-экономическое развитие, а также свежий
+      взгляд на привычные вещи - безусловно открывает новые горизонты для
+      первоочередных требований.
+    </div>
+
+    <form autocomplete="off" class="form" id="form" action="#">
+      <input
+        class="form__input form-control"
+        data-validate-field="name"
+        type="text"
+        id="name"
+        placeholder="Имя*"
+        autocomplete="off"
+      />
+      <input
+        class="form__input form-control"
+        data-validate-field="tel"
+        type="tel"
+        id="tel"
+        placeholder="Телефон*"
+      />
+      <input
+        class="form__input form-control"
+        data-validate-field="email"
+        type="email"
+        id="email"
+        placeholder="E-mail*"
+      />
+      <button class="btn btn-primary" id="submit-btn">Заказать</button>
+    </form>
+    <div class="text-container">
+      <p>
+        Следует отметить, что социально-экономическое развитие способствует
+        повышению качества переосмысления внешнеэкономических политик.
+        <span class="tooltip-container"><span class="tooltip">i</span></span>
+      </p>
+    </div>
+  </body>
+</html>
